@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Tuan Quang - Automation Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="image.jpg" alt="Nguyen Tuan Quang" class="profile-img">
+            <h1>Nguyen Tuan Quang</h1>
+            <p>Automation Engineer</p>
+        </div>
+        <div class="flag-container">
+            <a href="index.html" class="flag">
+                    <img src="Picture_social_media/Cờ VIệt nam.png" alt="Vietnam Flag">
+            </a>
+            <a href="index_english.html" class="flag">
+                <img src="Picture_social_media/Cờ anh.jpg" alt="US Flag">
+            </a>
+            <a href="index_japanese.html" class="flag">
+                <img src="Picture_social_media/cờ nhật.png" alt="US Flag">
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Nguyen Tuan Quang, an automation engineer with experience in designing electrical systems and programming PLCs. I have participated in many monitoring and automation control projects, from SCADA/HMI systems to IoT solutions.</p>
+            <br>
+            <ul>
+                <li>Design electrical cabinets and control circuit diagrams (2D, 3D)</li>
+                <li>Install and maintain electrical systems</li>
+                <li>Design SCADA and HMI interfaces</li>
+                <li>Technical drawing design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Work Experience</h2>
+
+        <!-- Company 1: PTSC M&C -->
+        <div class="company">
+            <h3>PTSC Mechanical & Construction Limited Company (PTSC M&C) (12/2024 - From Now)</h3>
+            <div class="project">
+                <h4>Operation Staff</h4>
+                <p>Position: System Operator for Shot Blasting of Block Segments</p>
+                <p>Operated mechanical, electrical, and automation systems at construction sites. Conducted inspections, maintenance, and ensured stable operation of equipment during the entire operation process.</p>
+            </div>
+        </div>
+
+            <!-- Company 2: Viet Vuong Atech -->
+        <div class="company">
+            <h3>VIET VUONG ATECH AUTOMATION AND ELECTRIC CO., LTD (06/2023 - 11/2024)</h3>
+            <div class="project">
+                <h4>BMS System</h4>
+                <p>Position: Electrical Cabinet Design and PLC Programming</p>
+                <p>Designed the medical gas monitoring system for Vinmec Hospital in Can Tho using PLC S7-1200 and WinCC Professional. Collected data from 27 devices via RS485 protocol.</p>
+            </div>
+            <div class="project">
+                <h4>Wastewater Treatment System</h4>
+                <p>Position: Electrical Cabinet Design and PLC Programming</p>
+                <p>Designed the monitoring and control interface for the wastewater treatment system at Hung Vuong Hotel in Quang Nam Province.</p>
+            </div>
+            <div class="project">
+                <h4>IoT Monitoring System</h4>
+                <p>Position: Electrical Cabinet Design and Lua Programming</p>
+                <p>Designed the IoT medical gas monitoring interface for hospitals in Saigon, including City International Hospital and Gia Dinh General Hospital.</p>
+            </div>
+            <div class="project">
+                <h4>Rotary Valve Discharge System</h4>
+                <p>Position: Electrical Cabinet Design and PLC Programming</p>
+                <p>Designed the monitoring and control interface for the discharge valve system using PLC S7-1200, Inverter, HMI, and Modbus Protocol.</p>
+            </div>
+        </div>
+
+        
+            
+            
+            <!-- Slideshow section -->
+            <div class="slideshow-container">
+                <div class="slideshow-images">
+                    <img src="Picture_Project/1.jpg"  class="slide">
+                    <img src="Picture_Project/2.png"  class="slide">
+                    <img src="Picture_Project/3.png"  class="slide">
+                    <img src="Picture_Project/4.jpg"  class="slide">
+                    <img src="Picture_Project/5.png"  class="slide">
+                    <img src="Picture_Project/6.png"  class="slide">
+                    <img src="Picture_Project/7.jpg"  class="slide">
+                    <img src="Picture_Project/8.png"  class="slide">
+                    <img src="Picture_Project/9.png"  class="slide">
+                    <img src="Picture_Project/10.png"  class="slide">
+                    <img src="Picture_Project/11.png"  class="slide">
+                    <img src="Picture_Project/12.png"  class="slide">
+                    <img src="Picture_Project/13.png"  class="slide">
+                    <img src="Picture_Project/14.jpg"  class="slide">
+                    <img src="Picture_Project/15.jpg"  class="slide">
+                    <img src="Picture_Project/16.jpg"  class="slide">
+                    <img src="Picture_Project/17.jpg"  class="slide">
+                    <img src="Picture_Project/18.jpg"  class="slide">
+                    <img src="Picture_Project/19.jpg"  class="slide">
+                    <img src="Picture_Project/20.jpg"  class="slide">
+                </div>
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+    
+            <!-- Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <span class="modal-prev">&#10094;</span>
+                <span class="modal-next">&#10095;</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="Picture_Skills/code.jpg" class="skill-icon">
+                    <h3>Programming</h3>
+                    <p>C, Python, Lua, Javascript, HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/Software.jpg" class="skill-icon">
+                    <h3>Software</h3>
+                    <p>Eplan, Autocad, Inventor, Tia Portal</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/enclosure.jpg" class="skill-icon">
+                    <h3>Electrical Cabinet Design</h3>
+                    <p>Control circuit drawings (2D, 3D)</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/sacada.jpg" class="skill-icon">
+                    <h3>SCADA and HMI Design</h3>
+                    <p>Professional SCADA and HMI interfaces</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/Languages.jpg" class="skill-icon">
+                    <h3>Languages</h3>
+                    <p>English, Japanese</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <div class="hobby-cards">
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/Piano.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/Piano.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/swimming.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/swimming.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/technology.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/technology.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/Languages_1.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/Languages_1.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card"> 
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/chess.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/chess.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Ton Duc Thang University - Ho Chi Minh City</h3>
+                    <span class="years">2019 - 2024</span>
+                    <p>Major: Control and Automation Engineering</p>
+                    <ul>
+                        <li>Completed courses on automatic control systems, SCADA, PLC</li>
+                        <li>Skills gained: Electrical system design, PLC programming, AutoCAD, Eplan</li>
+                        <li>Programming: C, Python, JavaScript, HTML, CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Nguyen Hue High School - Vung Tau City</h3>
+                    <span class="years">2016 - 2019</span>
+                    <p>Major: General Education</p>
+                    <ul>
+                        <li>Participated in extracurricular activities: music, sports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Phuoc Thang Secondary School - Vung Tau City</h3>
+                    <span class="years">2012 - 2016</span>
+                    <p>Program: Basic Education</p>
+                    <ul>
+                        <li>Participated in sports and arts activities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Phuoc Thang Primary School - Vung Tau City</h3>
+                    <span class="years">2007 - 2012</span>
+                    <p>Program: Basic Education</p>
+                    <ul>
+                        <li>Participated in sports and arts activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificate">
+                <a href="PDF/University Diploma.png" target="_blank">
+                    <h3>Graduation Certificate - Control and Automation Engineering</h3>
+                    <p>Issued by: Ton Duc Thang University</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="PDF/WORD MOS.pdf" target="_blank">
+                    <h3>Microsoft Office Word® 2016 Certificate</h3>
+                    <p>Issued by: IGG Vietnam</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="PDF/EXCEL MOS.pdf" target="_blank">
+                    <h3>Microsoft Office Excel® 2016 Certificate</h3>
+                    <p>Issued by: IGG Vietnam</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="https://credentials.britishcouncil.org/3cf459d4-bb0c-45a6-a236-7183afdf84d5?key=a7774cca4f0c637c792946784be0fd991ca436d1a344468af00f16b9ad776a3f&zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&gidzl=06VUUgmT4W07VDv-hmeL3m1rsdIq0nKA6og9TR9S4GfE9ebpvLf1N1fmY7FZ2q08777ST6AQJ_r9g1mK00" target="_blank">
+                    <h3>Aptis ESOL B2 Certificate</h3>
+                    <p>Issued by: British Council</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="PDF/Toiec.jpg" target="_blank">
+                    <h3>TOIEC Certificate (470) - Updating (700)</h3>
+                    <p>Issued by: IGG VietNam</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="Certificate_not_found.The_certificate_is_updating" target="_blank">
+                    <h3>Chứng chỉ JLPT (N3) - Updating...</h3>
+                    <p>Issued by: Japan Foundation</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:0367982593">0367982593</a> </p>
+            <p>Email: <a href="mailto:nguyentuanquangtech@gmail.com">nguyentuanquangtech@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nguyen Tuan Quang</p>
+    </footer>
+
+    <div class="social-media-btns">
+        <a href="https://zalo.me/0367982593" target="_blank" class="social-btn zalo-btn">
+            <img src="Picture_social_media/zalo.png" alt="Zalo" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100011157101472" target="_blank" class="social-btn fb-btn">
+            <img src="Picture_social_media/FB.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://github.com/Ken111111" target="_blank" class="social-btn github-btn">
+            <img src="Picture_social_media/Gthub.png" alt="GitHub" class="social-icon">
+        </a>
+    </div>
+
+</body>
+</html>
